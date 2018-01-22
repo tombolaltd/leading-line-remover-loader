@@ -12,13 +12,13 @@ npm install https://git@github.com:tombolaltd/leading-line-remover-loader.git#1.
 Second, include the loader in the webpack rule before (that is to the RIGHT of) the ts linter:
 ````
 {
-    test: /\.vue$/,
-    loader: 'vue-loader',
-    options: {
-        loaders: {
-          ts: 'ts-loader!tslint-loader!leading-line-remover-loader',
-        },
+  test: /\.vue$/,
+  loader: 'vue-loader',
+  options: {
+      loaders: {
+        ts: ['ts-loader', { loader: 'tslint-loader', options: { emitErrors: true, failOnHint: true } } , 'leading-line-remover-loader'],
       }
+  }
 }
 ````
 
