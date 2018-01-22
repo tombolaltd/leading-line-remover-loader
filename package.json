@@ -1,0 +1,34 @@
+{
+    "name": "leading-line-remover-loader",
+    "version": "1.0.0",
+    "description": "leading line remover loader for webpack",
+    "files": [ "src" ],
+    "main": "src/index.js",
+    "engines": {
+        "node": ">=4"
+    },
+    "dependencies": {
+    },
+    "peerDependencies": {
+        "webpack": ">=2"
+    },
+    "devDependencies": {
+    },
+    "scripts": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tombolaltd/leading-line-remover-loader.git"
+    },
+    "keywords": [
+        "webpack",
+        "loader",
+        "leading blank lines"
+    ],
+    "author": "tombola ltd",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tombolaltd/leading-line-remover-loader/issues"
+    },
+    "homepage": "https://github.com/tombolaltd/leading-line-remover-loader",
+}
